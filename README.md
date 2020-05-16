@@ -2,8 +2,8 @@
 
 Basic LEMP stack environment built using Docker Compose. It consists following:
 
-* PHP 7.3.1-fpm-alpine3.8
-* Nginx 1.15.6-alpine
+* PHP 7.3.6-fpm-alpine3.9
+* Nginx 1.17.0-alpine
 * MySQL 5.7
 
 ## Installation

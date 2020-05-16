@@ -45,6 +45,7 @@ services:
     volumes:
       - ${MYSQL_DATA_DIR}:/var/lib/mysql
       - ${MYSQL_LOG_DIR}:/var/log/mysql
+      - ${MYSQL_CONF}:/etc/mysql/conf.d/mysql.cnf
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_NAME}

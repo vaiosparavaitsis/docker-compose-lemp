@@ -1,4 +1,4 @@
-FROM php:7.3.1-fpm-alpine3.8
+FROM php:7.3.6-fpm-alpine3.9
 
 MAINTAINER Vaios Paravaitsis <vaiosps@hotmail.com>
 
@@ -22,6 +22,7 @@ RUN apk update \
         libintl \
         icu \
         icu-dev \
+        libzip-dev \
     && pecl install imagick \
     && docker-php-ext-enable imagick \
     && docker-php-ext-install \
